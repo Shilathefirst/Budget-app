@@ -1,0 +1,75 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    margin-top: 50px;
+    border: 2px solid gold;
+    border-radius: 10px;
+    padding: 20px;
+}
+.currency-section{
+  
+}
+.input-section label {
+    color: #fff;
+}
+
+.input-section input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.expense-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.expense-section h2 {
+    color: #000;
+}
+
+.result-section {
+    margin-top: 20px;
+}
+
+.result-section h2 {
+    color: #000;
+}
+
+.btn-primary {
+    background-color: gold;
+    border-color: gold;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #e0ac00;
+    border-color: #e0ac00;
+}
+
+.btn-danger {
+    background-color: #ff0000;
+    border-color: #ff0000;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #cc0000;
+    border-color: #cc0000;
+}
+
+.table th,
+.table td {
+    border-color: #ddd;
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+    border-color: #ddd;
+    color: #000;
+}

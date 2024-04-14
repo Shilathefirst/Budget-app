@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 text-center">Budget App</h1>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="currency-section">
+                    <label for="currency" class="font-weight-bold">Select your currency:</label>
+                    <select id="currency" class="form-control">
+                        <option value="USD">USD - United States Dollar</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="GBP">GBP - British Pound Sterling</option>
+                        <option value="ZAR">ZAR - South African Rand</option>
+                        <!-- Add more currency options as needed -->
+                    </select>
+                </div>
+                <div class="input-section mt-4">
+                    <label for="salary" class="font-weight-bold">Enter your salary:</label>
+                    <div class="input-group">
+                        <input type="number" id="salary" class="form-control" placeholder="Enter your salary">
+                        <div class="input-group-append">
+                            <button id="addSalaryBtn" class="btn btn-primary">Add Salary</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="expense-section mt-4">
+                    <h2 class="font-weight-bold">Monthly Expenses</h2>
+                    <table id="expenseTable" class="table">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Expense</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Rows for expenses will be added dynamically here -->
+                        </tbody>
+                    </table>
+                    <div class="input-group">
+                        <input type="text" id="expenseName" class="form-control" placeholder="Enter expense name">
+                        <input type="number" id="expenseAmount" class="form-control" placeholder="Enter expense amount">
+                        <div class="input-group-append">
+                            <button id="addExpenseBtn" class="btn btn-danger">Add Expense</button>
+                        </div>
+                    </div>
+                    <button id="calculateBtn" class="btn btn-success mt-3">Calculate</button>
+                </div>
+                <div class="result-section mt-4">
+                    <h2 class="font-weight-bold">Budget Summary</h2>
+                    <p id="remainingAmount">Remaining Amount: </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
